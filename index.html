@@ -1,128 +1,81 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f1e9">
-  <meta name="description" content="Wedding invitation of Rajesh Singh Rawat and Princi Singh. 11–12 December 2026, Delhi.">
-  <title>Rajesh & Princi | Wedding Invitation</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#310d19"><meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="A wedding invitation for Rajesh Singh Rawat and Princi Singh, 11–12 December 2026, Delhi.">
+  <title>Rajesh & Princi — A Wedding Celebration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="reading-progress"><span id="progressBar"></span></div>
-  <header class="site-header">
-    <a href="#top" class="monogram">R <i>&</i> P</a>
-    <span>THE WEDDING CELEBRATION</span>
-    <button class="sound-toggle" id="soundToggle" type="button" aria-label="Toggle ambient sound">SOUND OFF</button>
-  </header>
+<body class="locked">
+  <div class="petal-layer" id="petals" aria-hidden="true"></div>
+  <div class="top-progress"><span id="progressBar"></span></div>
 
-  <main id="top">
-    <section class="cover reveal">
-      <div class="cover-frame">
-        <div class="hanging h-left">ॐ <span>✦</span> ॐ</div>
-        <div class="hanging h-right">ॐ <span>✦</span> ॐ</div>
-        <p class="devanagari">॥ श्री गणेशाय नमः ॥</p>
-        <div class="ganesh-mark" aria-label="Ganesh symbol">ॐ</div>
-        <p class="invocation">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभः<br>निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा ॥</p>
-        <div class="thin-rule"><span>✧</span></div>
-        <p class="kicker">WITH THE BLESSINGS OF OUR ELDERS</p>
-        <h1>Rajesh <span class="amp">&</span> Princi</h1>
-        <p class="cover-subtitle">invite you to celebrate the beginning<br>of their forever</p>
-        <p class="cover-date">11 — 12 DECEMBER 2026 <span>·</span> DELHI</p>
-        <a class="scroll-cue" href="#invitation"><span>SCROLL TO OPEN THE INVITATION</span><b>↓</b></a>
-      </div>
-    </section>
+  <section class="gate-screen" id="gateScreen" aria-label="Wedding invitation entrance">
+    <div class="gate-glow"></div>
+    <div class="gate-content">
+      <p class="gate-blessing">॥ श्री गणेशाय नमः ॥</p>
+      <div class="gate-lanterns"><span>✧</span><span>✧</span><span>✧</span></div>
+      <p class="gate-overline">YOU ARE CORDIALLY INVITED TO</p>
+      <h1>Rajesh <i>&</i> Princi</h1>
+      <p class="gate-date">11 — 12 DECEMBER 2026 · DELHI</p>
+      <button class="open-gate" id="openGate" type="button"><span>✦</span> OPEN THE INVITATION <span>✦</span></button>
+      <p class="gate-hint">A little celebration awaits inside</p>
+    </div>
+    <div class="gate-doors" aria-hidden="true">
+      <div class="door door-left"><div class="door-inner"><div class="door-arch"></div><div class="door-medallion">ॐ</div><div class="door-pattern">✥<br>❦<br>✥</div><div class="door-handle"></div></div></div>
+      <div class="door door-right"><div class="door-inner"><div class="door-arch"></div><div class="door-medallion">शुभ</div><div class="door-pattern">✥<br>❦<br>✥</div><div class="door-handle"></div></div></div>
+    </div>
+    <span class="gate-corner corner-a">❧</span><span class="gate-corner corner-b">❧</span>
+  </section>
 
-    <section class="invitation section-shell reveal" id="invitation">
-      <p class="section-index">01 / THE INVITATION</p>
-      <div class="section-ornament">✧</div>
-      <p class="devanagari">॥ श्री गणेशाय नमः ॥</p>
-      <p class="shloka">विघ्न हरण मंगल करण, श्री गणपति महाराज।<br>प्रथम निमंत्रण आपको, पूरण कीजे काज॥</p>
-      <p class="parents">Mrs. Jagdamba Devi &amp; Mr. Ram Singh Rawat</p>
-      <p class="invite-copy">Seek your most precious presence to share the golden moments of joy and happiness on the</p>
-      <h2>Wedding Ceremony</h2>
-      <p class="of-their">of their loving son</p>
-      <p class="couple-name">Rajesh Singh Rawat</p>
-      <p class="relation">(Grand S/o Lt. Mrs. Swari Devi &amp; Lt. Mr. Tule Singh)</p>
-      <p class="weds">weds</p>
-      <p class="couple-name bride">Princi Singh</p>
-      <p class="relation">(D/o Mrs. Rekha Singh &amp; Mr. Brijesh Singh)</p>
-      <div class="section-ornament bottom">❦</div>
-    </section>
+  <div class="site" id="site">
+    <header class="nav"><a href="#home" class="nav-mark">R <i>&</i> P</a><span>THE WEDDING OF RAJESH & PRINCI</span><button id="musicToggle" class="music-toggle" type="button" aria-label="Turn music off"><span class="sound-bars"><b></b><b></b><b></b><b></b></span><span id="musicLabel">MUSIC ON</span></button></header>
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-flower flower-one">✿</div><div class="hero-flower flower-two">❀</div><div class="hero-flower flower-three">✽</div>
+        <p class="sanskrit">॥ श्री गणेशाय नमः ॥</p><div class="ganesh">ॐ</div>
+        <p class="eyebrow">WITH THE BLESSINGS OF OUR ELDERS</p>
+        <h2>Two hearts, <em>one</em> forever.</h2>
+        <div class="names-script">Rajesh <span>&</span> Princi</div>
+        <p class="hero-copy">Together with our families, we invite you<br>to witness the beginning of our forever.</p>
+        <div class="hero-date"><span>FRIDAY & SATURDAY</span><b>11 — 12</b><span>DECEMBER · 2026</span></div>
+        <a class="down-cue" href="#invitation">SCROLL TO EXPLORE <span>↓</span></a>
+      </section>
 
-    <section class="celebrations section-shell reveal" id="celebrations">
-      <p class="section-index">02 / THE CELEBRATIONS</p>
-      <p class="eyebrow">TWO DAYS OF JOY & TRADITION</p>
-      <h2>Save the Dates</h2>
-      <div class="day-block">
-        <div class="day-heading"><span>FRIDAY</span><strong>11</strong><span>DECEMBER 2026</span></div>
-        <div class="event-row"><div><h3>Nevuter, Mehndi &amp; Sangeet</h3><p>An evening of music, colour and celebration</p></div><time>7:00 PM</time></div>
-        <div class="event-row"><div><h3>Dinner</h3><p>Join us for a warm family gathering</p></div><time>8:00 PM</time></div>
-      </div>
-      <div class="day-block second-day">
-        <div class="day-heading"><span>SATURDAY</span><strong>12</strong><span>DECEMBER 2026</span></div>
-        <div class="event-row"><div><h3>Mangal Snan / Haldi Ceremony</h3><p>With blessings and auspicious beginnings</p></div><time>10:00 AM</time></div>
-        <div class="event-row"><div><h3>Ganesh Pooja</h3><p>Seeking blessings for the new journey</p></div><time>11:00 AM</time></div>
-        <div class="event-row"><div><h3>Gurchari</h3></div><time>6:00 PM</time></div>
-        <div class="event-row"><div><h3>Departure of Barat</h3></div><time>7:00 PM</time></div>
-      </div>
-    </section>
+      <section class="invitation paper-section reveal" id="invitation">
+        <div class="section-top"><span>01</span><i>✦</i><span>THE INVITATION</span></div>
+        <p class="sanskrit dark">॥ श्री गणेशाय नमः ॥</p>
+        <p class="shloka">विघ्न हरण मंगल करण, श्री गणपति महाराज।<br>प्रथम निमंत्रण आपको, पूरण कीजे काज॥</p>
+        <p class="parents">Mrs. Jagdamba Devi &amp; Mr. Ram Singh Rawat</p>
+        <p class="invite-text">Request the pleasure of your gracious presence<br>at the wedding ceremony of their beloved son</p>
+        <h2 class="person-name">Rajesh Singh Rawat</h2>
+        <p class="family-note">Grand S/o Lt. Mrs. Swari Devi &amp; Lt. Mr. Tule Singh</p>
+        <div class="weds-seal">✦ <span>WEDS</span> ✦</div>
+        <h2 class="person-name bride-name">Princi Singh</h2>
+        <p class="family-note">D/o Mrs. Rekha Singh &amp; Mr. Brijesh Singh</p>
+        <div class="floral-divider">❦ ✧ ❦</div>
+      </section>
 
-    <section class="venue-section reveal" id="venue">
-      <div class="venue-inner">
-        <p class="section-index">03 / THE VENUE</p>
-        <p class="eyebrow">THE WEDDING PROCESSION WILL PROCEED TO</p>
-        <h2>Heritage Green</h2>
-        <p class="venue-block">A-Block, Main 60 Futa Road,<br>Kaushik Enclave, Burari,<br>Delhi – 84</p>
-        <div class="address-note">
-          <span class="note-label">BARAT DEPARTURE</span>
-          <p>Barat will depart from our residence:</p>
-          <p>H. No. 27, Street No. 10/7,<br>Mahadev Colony, Guru Nanak Dev,<br>Khatia Baba Marg, Bhalswa,<br>Delhi – 42</p>
-        </div>
-        <a class="map-button" href="https://www.google.com/maps/search/?api=1&query=Heritage+Green+A-Block+Main+60+Futa+Road+Kaushik+Enclave+Burari+Delhi" target="_blank" rel="noopener">OPEN VENUE IN GOOGLE MAPS ↗</a>
-      </div>
-    </section>
+      <section class="countdown-section reveal">
+        <p class="eyebrow">THE COUNTDOWN TO FOREVER</p><h2>Until the big day</h2>
+        <div class="countdown" id="countdown"><div><b id="days">—</b><span>DAYS</span></div><i>:</i><div><b id="hours">—</b><span>HOURS</span></div><i>:</i><div><b id="minutes">—</b><span>MINUTES</span></div><i>:</i><div><b id="seconds">—</b><span>SECONDS</span></div></div>
+        <div class="sparkle-line">✧　✦　✧</div>
+      </section>
 
-    <section class="rsvp section-shell reveal" id="rsvp">
-      <p class="section-index">04 / WITH LOVE</p>
-      <p class="eyebrow">YOUR PRESENCE IS OUR PRESENT</p>
-      <h2>We look forward<br>to celebrating with you.</h2>
-      <p class="rsvp-caption">For any assistance or RSVP, please reach out to the family.</p>
-      <div class="family-columns">
-        <div>
-          <p class="list-heading">RSVP</p>
-          <p>Madan Singh Rawat</p>
-          <p>Dabal Singh Rawat (Tauji)</p>
-          <p>Gabar Singh Rawat</p>
-          <p>Dev Singh Rawat</p>
-          <p>Jagra Singh Rawat (Chachaji)</p>
-          <p>Jabar Singh Rawat</p>
-          <p>Rakesh Rawat</p>
-          <p>Manoj Rawat</p>
-          <p>Sandeep Rawat</p>
-          <p>Ravi Rawat</p>
-          <p>Abhishek Rawat (Bhai)</p>
-        </div>
-        <div>
-          <p class="list-heading">WITH BEST COMPLIMENTS</p>
-          <p>Kedar Singh Chauhan</p>
-          <p>Suman Singh Chauhan</p>
-          <p class="small">(Mamaji)</p>
-          <p class="spaced-family">All Rawat Family</p>
-          <p>Relatives &amp; Friends</p>
-        </div>
-      </div>
-      <div class="closing-line">Thandi ka mausam hai, thandi se na ghabrana,<br>mere chacha/mama ki shaadi mein jaldi se jaldi aana…</div>
-      <p class="children-names">Ahana, Krishna, Daivik, Pihu, Aashvi, Pragati,<br>Vritika, Mishika, Aanya</p>
-      <div class="final-monogram">R <span>&</span> P</div>
-      <p class="final-thanks">WITH LOVE · THE RAWAT &amp; SINGH FAMILIES</p>
-    </section>
-  </main>
+      <section class="events paper-section reveal" id="events">
+        <div class="section-top"><span>02</span><i>✦</i><span>THE CELEBRATIONS</span></div><p class="eyebrow">TWO DAYS OF JOY, MUSIC & TRADITION</p><h2>Save the dates</h2>
+        <div class="event-day"><div class="date-tile"><span>FRI</span><b>11</b><small>DEC 2026</small></div><div class="day-events"><p class="day-caption">AN EVENING OF MUSIC & COLOUR</p><article><div><h3>Nevuter, Mehndi &amp; Sangeet</h3><p>Let the music, laughter and festivities begin</p></div><time>7:00 PM</time></article><article><div><h3>Dinner</h3><p>A delicious evening with family and friends</p></div><time>8:00 PM</time></article></div></div>
+        <div class="event-day"><div class="date-tile"><span>SAT</span><b>12</b><small>DEC 2026</small></div><div class="day-events"><p class="day-caption">THE WEDDING DAY</p><article><div><h3>Mangal Snan / Haldi</h3><p>A morning of blessings and bright beginnings</p></div><time>10:00 AM</time></article><article><div><h3>Ganesh Pooja</h3><p>Seeking blessings for the new journey</p></div><time>11:00 AM</time></article><article><div><h3>Gurchari</h3></div><time>6:00 PM</time></article><article><div><h3>Departure of Barat</h3></div><time>7:00 PM</time></article></div></div>
+      </section>
 
-  <footer><span>RAJESH &amp; PRINCI</span><span>11 — 12 DECEMBER 2026</span></footer>
+      <section class="venue reveal" id="venue"><div class="venue-card"><div class="section-top"><span>03</span><i>✦</i><span>THE WEDDING VENUE</span></div><div class="venue-icon">⌖</div><p class="eyebrow">THE CELEBRATION AWAITS AT</p><h2>Heritage Green</h2><p class="venue-address">A-Block, Main 60 Futa Road,<br>Kaushik Enclave, Burari,<br>Delhi – 84</p><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Heritage+Green+A-Block+Main+60+Futa+Road+Kaushik+Enclave+Burari+Delhi" target="_blank" rel="noopener">GET DIRECTIONS <span>↗</span></a><p class="barat-note">The Barat will depart from the family residence.<br>We look forward to welcoming you.</p></div></section>
+
+      <section class="family paper-section reveal" id="family"><div class="section-top"><span>04</span><i>✦</i><span>WITH LOVE</span></div><p class="eyebrow">YOUR PRESENCE IS OUR PRESENT</p><h2>Celebrate with us</h2><p class="family-intro">We would be honoured to have you with us<br>as we begin this beautiful new chapter.</p><div class="family-grid"><div><h3>RSVP</h3><p>Madan Singh Rawat</p><p>Dabal Singh Rawat (Tauji)</p><p>Gabar Singh Rawat</p><p>Dev Singh Rawat</p><p>Jagra Singh Rawat (Chachaji)</p><p>Jabar Singh Rawat</p><p>Rakesh Rawat</p><p>Manoj Rawat</p><p>Sandeep Rawat</p><p>Ravi Rawat</p><p>Abhishek Rawat (Bhai)</p></div><div><h3>WITH BEST COMPLIMENTS</h3><p>Kedar Singh Chauhan</p><p>Suman Singh Chauhan (Mamaji)</p><p class="family-gap">All Rawat Family</p><p>Relatives &amp; Friends</p></div></div><div class="kids-note">A special shout-out to our little stars<br><span>Ahana · Krishna · Daivik · Pihu · Aashvi · Pragati · Vritika · Mishika · Aanya</span></div><div class="closing-verse">Thandi ka mausam hai, thandi se na ghabrana,<br>mere chacha/mama ki shaadi mein jaldi se jaldi aana…</div><div class="final-names">Rajesh <i>&</i> Princi</div><p class="final-line">WITH LOVE · THE RAWAT &amp; SINGH FAMILIES</p></section>
+    </main>
+    <footer><span>MADE WITH LOVE</span><span>11 — 12 DECEMBER 2026 · DELHI</span><a href="#home">BACK TO TOP ↑</a></footer>
+  </div>
   <script src="script.js"></script>
-</body>
-</html>
+</body></html>
