@@ -8,3 +8,107 @@
 .family{padding-top:85px;padding-bottom:85px}.family-intro{font:italic 19px/1.5 'Cormorant Garamond';color:#8b7464}.family-grid{max-width:700px;margin:42px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:40px;text-align:center}.family-grid h3{font-size:9px;letter-spacing:2px;color:#a47c43;margin-bottom:18px}.family-grid p{font:17px/1.35 'Cormorant Garamond';margin:5px 0;color:#654b42}.family-gap{margin-top:22px!important}.kids-note{margin:45px auto 0;font:italic 18px 'Cormorant Garamond';color:#8c7060}.kids-note span{display:block;font:12px/1.8 'DM Sans';margin-top:9px;color:#a18366}.closing-verse{margin:38px auto 0;font:italic 18px/1.6 'Cormorant Garamond';color:#9a6d56}.final-names{font:54px 'Great Vibes';color:#67243a;margin-top:30px}.final-names i{font:italic 26px 'Cormorant Garamond';color:#b48a4b}.final-line{font-size:8px;letter-spacing:2px;color:#a88a60;margin-top:7px}footer{background:#2c0c17;color:#d6c29c;padding:22px 5vw;display:flex;justify-content:space-between;gap:15px;font-size:8px;letter-spacing:1.5px}footer a{color:#d6c29c;text-decoration:none}.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease}.reveal.in-view{opacity:1;transform:none}.petal-layer{position:fixed;inset:0;z-index:15;pointer-events:none;overflow:hidden}.petal{position:absolute;top:-30px;color:#d99a9a;opacity:.75;animation:fall linear forwards;text-shadow:0 1px 4px #fff4}@keyframes fall{to{transform:translate3d(var(--drift),110vh,0) rotate(540deg);opacity:.1}}
 @media(max-width:650px){.gate-content{padding-bottom:145px}.gate-blessing{font-size:16px}.door{border-width:5px}.door-inner{inset:10px}.door-medallion{width:58px;height:58px;font-size:21px}.door-pattern{font-size:25px;margin-top:20px}.door-arch{height:33%}.nav{padding:0 14px}.nav>span{font-size:7px;letter-spacing:1px}.hero{min-height:650px;padding-top:85px}.hero h2{font-size:30px}.hero-date{gap:9px}.hero-date b{font-size:34px}.paper-section{padding:70px 18px}.event-day{grid-template-columns:76px 1fr;gap:15px;margin-top:34px}.date-tile{height:105px}.date-tile b{font-size:44px}.day-events h3{font-size:19px}.day-events article p{font-size:13px}.day-events time{font-size:9px}.countdown b{font-size:37px}.countdown div{min-width:45px}.family-grid{gap:18px}.family-grid p{font-size:15px}.venue h2{font-size:46px}footer{flex-wrap:wrap;justify-content:center;text-align:center}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Refined mobile-first polish and richer celebratory motion */
+:root{--wine:#35101f;--wine2:#672b3e;--gold:#d5ad68;--gold2:#f2dfb8;--cream:#fbf4e8;--paper:#fffaf1;--ink:#432733}
+body{overflow-x:hidden;background:var(--cream)}
+button,a{-webkit-tap-highlight-color:transparent}
+.open-gate{position:relative;z-index:8;border-radius:3px;min-height:50px;padding:15px 25px;box-shadow:0 0 0 5px #d9b66b18,0 10px 34px #12050b88;animation:buttonGlow 2.8s ease-in-out infinite}
+@keyframes buttonGlow{50%{box-shadow:0 0 0 9px #d9b66b12,0 10px 40px #e2b96a44}}
+.gate-screen:before{border-width:2px}.gate-screen:after{inset:34px}
+.gate-lanterns span{display:inline-block;animation:lantern 2.2s ease-in-out infinite;transform-origin:50% 0}
+.gate-lanterns span:nth-child(2){animation-delay:.5s}.gate-lanterns span:nth-child(3){animation-delay:1s}
+@keyframes lantern{0%,100%{transform:rotate(-8deg);opacity:.7}50%{transform:rotate(8deg);opacity:1;text-shadow:0 0 18px #f6d58a}}
+.door{background:repeating-linear-gradient(90deg,#35101f 0,#572033 18%,#421425 36%,#61283b 50%,#35101f 72%);box-shadow:inset 0 0 0 2px #d5ad68,inset 0 0 0 9px #4c1b2b,inset 0 0 55px #12040a,0 0 30px #17050d55}
+.door-inner:after{content:"✧  ❦  ✧";position:absolute;bottom:8%;font:22px 'Cormorant Garamond';letter-spacing:8px;color:#d9b66b;opacity:.8}
+.door-medallion{box-shadow:0 0 0 7px #501b2c,0 0 0 8px #b68d4c,0 0 25px #e2bd7655;animation:medallionGlow 3s ease-in-out infinite}
+@keyframes medallionGlow{50%{box-shadow:0 0 0 7px #501b2c,0 0 0 8px #b68d4c,0 0 36px #e2bd7688}}
+.hero{background:radial-gradient(ellipse at 50% 42%,#824052 0,#5b2034 53%,#35101f 100%)}
+.hero:before,.hero:after,.paper-section:before{pointer-events:none}
+.hero:before{inset:22px;border:1px solid #e1c17e77}.hero:after{inset:31px;border:1px solid #e1c17e33}
+.hero-flower{filter:drop-shadow(0 4px 9px #1c081455)}
+.hero .ganesh{animation:softPulse 4s ease-in-out infinite}
+@keyframes softPulse{50%{transform:scale(1.06);box-shadow:0 0 0 10px #c9a45b19,0 0 30px #e4bd6a44}}
+.names-script{animation:arrive 1.4s .25s both}
+@keyframes arrive{from{opacity:0;transform:translateY(18px);filter:blur(5px)}to{opacity:1;transform:none;filter:none}}
+.countdown-section{background:linear-gradient(135deg,#f5ead8,#ead9bf,#f8efdf);position:relative;overflow:hidden}
+.countdown-section:before,.countdown-section:after{content:"✧";position:absolute;color:#c9a45b55;font-size:100px;top:10px;left:5%;animation:drift 9s infinite}
+.countdown-section:after{left:auto;right:5%;top:auto;bottom:0;animation-delay:2s}
+.date-tile{background:linear-gradient(145deg,#fffaf1,#f6ead6);box-shadow:0 8px 22px #5a29380d}
+.day-events article{transition:background .25s,padding .25s}
+.day-events article:hover{background:#f8f0e3;padding-left:10px;padding-right:10px}
+.venue{background:radial-gradient(ellipse at 50% 10%,#794052,#4a172a 62%,#2e0b18)}
+.venue-card{box-shadow:0 18px 60px #1b071044;background:#ffffff05}
+.map-link{transition:background .25s,color .25s,transform .25s}.map-link:hover{background:var(--gold);color:#35101f;transform:translateY(-2px)}
+.family-grid>div{padding:20px 12px;border-top:1px solid #d7c49f;border-bottom:1px solid #d7c49f}
+.petal{filter:drop-shadow(0 2px 3px #a66a6a44)}
+
+/* Phones: avoid tiny text, clipped names, horizontal scrolling and cramped event rows. */
+@media(max-width:650px){
+  html,body{width:100%;max-width:100%;overflow-x:hidden}
+  .gate-screen{min-height:100svh;padding:14px}
+  .gate-screen:before{inset:10px}.gate-screen:after{inset:17px}
+  .gate-content{width:100%;padding:0 14px 0;transform:translateY(-3vh)}
+  .gate-blessing{font-size:17px;letter-spacing:2px;margin-bottom:17px}
+  .gate-lanterns{gap:42px;margin-bottom:18px;font-size:22px}
+  .gate-overline,.gate-date{font-size:9px;letter-spacing:2px;line-height:1.8}
+  .gate-content h1{font-size:clamp(48px,13vw,68px);margin:10px 0}
+  .gate-date{margin:13px 0 22px}
+  .open-gate{font-size:9px;letter-spacing:1.4px;padding:14px 16px;max-width:100%}
+  .gate-hint{font-size:15px;margin-top:14px}
+  .door{border-width:4px}.door-inner{inset:8px}.door-arch{left:7%;right:7%;height:28%;top:12%}
+  .door-medallion{width:48px;height:48px;font-size:18px;box-shadow:0 0 0 5px #501b2c,0 0 0 6px #b68d4c}
+  .door-pattern{font-size:19px;line-height:1.7;margin-top:13px}
+  .door-handle{width:9px;height:9px}.door-inner:after{font-size:12px;letter-spacing:3px}
+  .gate-corner{font-size:30px}.corner-a{top:20px;left:19px}.corner-b{bottom:20px;right:19px}
+  .nav{height:58px;padding:0 12px;gap:8px}
+  .nav>span{font-size:6.5px;letter-spacing:.8px;white-space:nowrap}
+  .nav-mark{font-size:23px;flex-shrink:0}.music-toggle{padding:8px 9px;gap:6px;font-size:8px;flex-shrink:0}
+  .hero{min-height:auto;padding:78px 22px 54px}
+  .hero .sanskrit{font-size:15px;letter-spacing:2px}
+  .ganesh{width:62px;height:62px;font-size:38px;margin-bottom:17px}
+  .hero .eyebrow{font-size:8px;letter-spacing:2px}
+  .hero h2{font-size:29px;line-height:1.2}
+  .names-script{font-size:clamp(54px,15vw,78px);line-height:1.15;margin:14px 0}
+  .hero-copy{font-size:17px;line-height:1.5}.hero-copy br{display:none}
+  .hero-date{gap:9px;margin:27px 0 34px;letter-spacing:1px;font-size:7px}
+  .hero-date b{font-size:34px}.down-cue{font-size:8px}
+  .flower-one{left:5%;top:17%;font-size:27px}.flower-two{right:5%;top:31%;font-size:34px}.flower-three{left:8%;bottom:11%;font-size:24px}
+  .paper-section{padding:62px 18px}
+  .paper-section:before{inset:9px}
+  .section-top{gap:9px;font-size:8px;letter-spacing:1.5px;margin-bottom:30px}
+  .shloka{font-size:16px;line-height:1.65}.parents{font-size:12px;line-height:1.5}
+  .invite-text{font-size:17px}.invite-text br{display:none}
+  .person-name{font-size:clamp(30px,9vw,42px);line-height:1.15}
+  .family-note{font-size:13px;line-height:1.5}
+  .countdown-section{padding:58px 12px}
+  .countdown-section h2,.events h2,.family h2{font-size:39px;margin-bottom:24px}
+  .countdown{gap:clamp(5px,2vw,12px)}.countdown div{min-width:0;flex:1;gap:4px}
+  .countdown b{font-size:clamp(29px,8vw,38px)}.countdown span{font-size:7px;letter-spacing:1px}
+  .countdown>i{font-size:23px;margin-top:-12px}
+  .events{padding-top:62px;padding-bottom:65px}
+  .event-day{display:grid;grid-template-columns:58px minmax(0,1fr);gap:11px;margin:30px auto 0}
+  .date-tile{height:88px}.date-tile span,.date-tile small{font-size:7px;letter-spacing:1px}.date-tile b{font-size:37px}
+  .day-caption{font-size:7px;letter-spacing:1px;line-height:1.5}
+  .day-events{min-width:0}.day-events article{align-items:flex-start;gap:7px;padding:12px 0}
+  .day-events h3{font-size:17px;line-height:1.2}.day-events article p{font-size:12px;line-height:1.4}
+  .day-events time{font-size:8px;letter-spacing:0;white-space:nowrap;padding-top:3px}
+  .venue{padding:62px 14px}.venue-card{padding:32px 17px 34px}
+  .venue h2{font-size:42px}.venue-address{font-size:17px;line-height:1.55}
+  .barat-note{font-size:14px}.map-link{font-size:8px;padding:12px 15px}
+  .family{padding-top:62px;padding-bottom:65px}.family-intro{font-size:17px;padding:0 6px}
+  .family-intro br{display:none}.family-grid{grid-template-columns:1fr;gap:22px;margin-top:28px}
+  .family-grid>div{padding:18px 10px}.family-grid p{font-size:16px;line-height:1.45}
+  .kids-note{font-size:16px;line-height:1.5;margin-top:32px;padding:0 8px}
+  .kids-note span{font-size:11px;line-height:1.8}
+  .closing-verse{font-size:16px;line-height:1.6;padding:0 5px}
+  .final-names{font-size:47px}footer{padding:20px 14px;gap:12px;font-size:7px;letter-spacing:1px}
+  footer span,footer a{width:100%}
+}
+@media(max-width:360px){
+  .nav>span{display:none}.nav{justify-content:space-between}
+  .event-day{grid-template-columns:52px minmax(0,1fr);gap:8px}
+  .day-events h3{font-size:15px}.day-events time{font-size:7px}
+  .countdown b{font-size:27px}.countdown span{font-size:6px}
+}
+@media(prefers-reduced-motion:reduce){.open-gate,.gate-lanterns span,.door-medallion,.hero .ganesh,.names-script{animation:none!important}}
